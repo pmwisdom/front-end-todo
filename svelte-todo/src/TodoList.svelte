@@ -5,12 +5,10 @@
   $: inputText = "";
 
   function handleInputChange(evt) {
-    console.log("Changed");
     inputText = evt.currentTarget.value;
   }
 
   function handleAddTodo() {
-    console.log("input text", inputText);
     todos = [...todos, inputText];
     inputText = "";
   }
